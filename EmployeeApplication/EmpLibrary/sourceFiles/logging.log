@@ -1,0 +1,179 @@
+2017-08-23 02:52:58 INFO  Demo:25 - main started
+2017-08-23 02:52:58 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:52:58 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:52:58 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:52:58 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:52:58 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:52:59 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:52:59 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:52:59 ERROR EmployeeServiceImpl:43 - sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:52:59 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:52:59 INFO  Demo:63 - main ended
+2017-08-23 02:55:12 INFO  Demo:25 - main started
+2017-08-23 02:55:12 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:55:12 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:55:12 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:55:12 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:55:12 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:55:13 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:55:13 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:55:13 ERROR EmployeeServiceImpl:43 - sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:55:13 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:55:13 INFO  Demo:63 - main ended
+2017-08-23 02:57:52 INFO  Demo:25 - main started
+2017-08-23 02:57:52 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:57:52 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:57:52 ERROR BonusServiceImpl:39 - EmpLibrary\sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:57:52 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:57:52 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:57:53 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:57:53 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:57:53 ERROR EmployeeServiceImpl:43 - EmpLibrary\sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:57:53 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:57:53 INFO  Demo:63 - main ended
+2017-08-23 03:02:36 INFO  Demo:25 - main started
+2017-08-23 03:02:36 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:02:36 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:02:36 ERROR BonusServiceImpl:39 - EmpLibrary\sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 03:02:36 INFO  Demo:47 - calling add method of to add bonus data to database
+2017-08-23 03:02:36 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:02:36 INFO  Demo:54 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:02:36 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:02:36 ERROR EmployeeServiceImpl:43 - EmpLibrary\sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 03:02:37 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:02:37 INFO  Demo:69 - main ended
+2017-08-23 03:03:06 INFO  Demo:25 - main started
+2017-08-23 03:03:06 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:03:06 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:03:06 ERROR BonusServiceImpl:39 - EmpLibrary\sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 03:03:06 INFO  Demo:48 - calling add method of to add bonus data to database
+2017-08-23 03:03:06 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:03:06 INFO  Demo:55 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:03:06 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:03:06 ERROR EmployeeServiceImpl:43 - EmpLibrary\sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 03:03:07 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:03:07 INFO  Demo:70 - main ended
+2017-08-23 03:06:54 INFO  Demo:25 - main started
+2017-08-23 03:06:54 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:06:54 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:06:54 INFO  Demo:48 - calling add method of to add bonus data to database
+2017-08-23 03:06:54 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:06:55 INFO  Demo:55 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:06:55 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:06:55 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:06:55 INFO  Demo:70 - main ended
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:55 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:06:56 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:46 INFO  Demo:25 - main started
+2017-08-23 03:11:47 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:11:47 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:11:47 INFO  Demo:48 - calling add method of to add bonus data to database
+2017-08-23 03:11:47 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:11:47 INFO  Demo:55 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:11:47 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:11:48 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:11:48 INFO  Demo:70 - main ended
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:11:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:47 INFO  Demo:25 - main started
+2017-08-23 03:12:47 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:12:47 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:12:47 INFO  Demo:48 - calling add method of to add bonus data to database
+2017-08-23 03:12:47 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:12:48 INFO  Demo:55 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:12:48 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:12:48 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:12:48 INFO  Demo:70 - main ended
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:48 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:12:49 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:57 INFO  Demo:25 - main started
+2017-08-23 03:33:57 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 03:33:57 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 03:33:57 INFO  Demo:48 - calling add method of to add bonus data to database
+2017-08-23 03:33:57 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 03:33:58 INFO  Demo:55 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 03:33:58 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 03:33:58 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 03:33:58 INFO  Demo:70 - main ended
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 4
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:58 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 1
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 2
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
+2017-08-23 03:33:59 INFO  BonusServiceImpl:89 - allocating bonus to employees department wise 3
