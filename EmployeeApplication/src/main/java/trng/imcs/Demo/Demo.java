@@ -32,23 +32,18 @@ public class Demo {
 		try {
 			logger.info("Calling loadFromFile method to load data from local source");
 			bonusList = bs.loadFromFile();
-			System.out.println(bonusList);
 		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-			//logger.error(e1.getMessage());
+			logger.error(e1.getMessage());
 		} catch (IOException e1) {
-			e1.getMessage();
-			//logger.error(e1.getMessage());
+			logger.error(e1.getMessage());
 		} catch (ParseException e1) {
-			e1.getMessage();
-
-			//logger.error(e1.getMessage());
+			logger.error(e1.getMessage());
 		}
 		try {
 			logger.info("calling add method of to add bonus data to database");
 			bDAO.add(bonusList);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 
 		try {
@@ -56,8 +51,6 @@ public class Demo {
 					"calling add method and load from file method to load employee data from source and to load it to database");
 			eDao.add(es.loadFromFile());
 		} catch (SQLException | IOException | ParseException e1) {
-			e1.getMessage();
-
 			logger.error(e1.getMessage());
 		}
 
