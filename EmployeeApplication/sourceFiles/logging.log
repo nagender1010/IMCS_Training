@@ -1,0 +1,39 @@
+2017-08-23 02:46:20 INFO  Demo:25 - main started
+2017-08-23 02:46:20 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:46:20 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:46:20 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:46:20 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:46:20 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:49:22 INFO  Demo:25 - main started
+2017-08-23 02:49:22 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:49:22 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:49:22 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:49:22 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:49:22 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:49:23 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:49:23 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:49:23 ERROR EmployeeServiceImpl:43 - sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:49:23 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:49:23 INFO  Demo:63 - main ended
+2017-08-23 02:50:45 INFO  Demo:25 - main started
+2017-08-23 02:50:45 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:50:45 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:50:45 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:50:45 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:50:45 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:50:45 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:50:45 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:50:45 ERROR EmployeeServiceImpl:43 - sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:50:46 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:50:46 INFO  Demo:63 - main ended
+2017-08-23 02:51:29 INFO  Demo:25 - main started
+2017-08-23 02:51:29 INFO  Demo:33 - Calling loadFromFile method to load data from local source
+2017-08-23 02:51:29 INFO  BonusServiceImpl:28 - Load Bonus data from source path
+2017-08-23 02:51:29 ERROR BonusServiceImpl:39 - sourceFiles\bonusData.txt (The system cannot find the file specified)
+2017-08-23 02:51:29 INFO  Demo:43 - calling add method of to add bonus data to database
+2017-08-23 02:51:29 INFO  BonusDAOImpl:23 - adding bonus
+2017-08-23 02:51:30 INFO  Demo:50 - calling add method and load from file method to load employee data from source and to load it to database
+2017-08-23 02:51:30 INFO  EmployeeServiceImpl:26 - Loading file from source
+2017-08-23 02:51:30 ERROR EmployeeServiceImpl:43 - sourceFiles\employeeInfo.txt (The system cannot find the file specified)
+2017-08-23 02:51:30 INFO  BonusDAOImpl:68 - getting Bonus from DB
+2017-08-23 02:51:30 INFO  Demo:63 - main ended
