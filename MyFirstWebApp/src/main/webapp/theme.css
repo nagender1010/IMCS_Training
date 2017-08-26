@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+ <style>
+      .navbar-inverse{
+          background-color:  darkcyan;
+      }
+      
+    
+    
+      .container{
+          background-color:aliceblue;
+      }
+     
+      #last{
+          position: absolute;
+          left: 120px;
+      }
+     
+   
+    </style>
