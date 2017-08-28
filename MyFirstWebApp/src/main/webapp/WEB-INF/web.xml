@@ -6,7 +6,7 @@
 	<display-name>Archetype Created Web Application</display-name>
 
 	<welcome-file-list>
-		<welcome-file>nagtest.htm</welcome-file>
+		<welcome-file>signup.html</welcome-file>
 		<welcome-file>myindex.htm</welcome-file>
 		<welcome-file>mydefaultpage.htm</welcome-file>
 	</welcome-file-list>

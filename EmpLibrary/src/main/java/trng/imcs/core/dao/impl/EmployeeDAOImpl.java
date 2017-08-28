@@ -105,6 +105,66 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 		return empList;
 	}//
+	
+	@Override
+	public List<Employee> getAll(int deptId) {
+		List<Employee> empList = new ArrayList<>();
+
+		ResultSet rs = null;
+		String sql = "select id, name, age, dateOfBirth, dateOfJoining, salary, salaryGrade, deptId, deptName from employee where deptId=?";
+		try (Connection con = ConnectionManager.getConnection(); PreparedStatement st = con.prepareStatement(sql)) {
+
+			st.setInt(1, deptId);
+			rs = st.executeQuery();
+			while (rs.next()) {
+				Employee e = new Employee();
+				e.setId(rs.getInt(1));
+				e.setName(rs.getString(2));
+				e.setAge(rs.getInt(3));
+				e.setDateOfBirth(rs.getDate(4));
+				e.setDateOfJoining(rs.getDate(5));
+				e.setSalary(rs.getFloat(6));
+				e.setSalaryGrade(rs.getInt(7));
+				e.setDeptId(rs.getInt(8));
+				e.setDeptName(rs.getString(9));
+				empList.add(e);
+			}
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		return empList;
+	}//
+	@Override
+	public Employee getEmployee(int empId) {
+		Employee e = new Employee();
+		ResultSet rs = null;
+		String sql = "select id, name, age, dateOfBirth, dateOfJoining, salary, salaryGrade, deptId, deptName from employee where id=?";
+		try (Connection con = ConnectionManager.getConnection(); PreparedStatement st = con.prepareStatement(sql)) {
+
+			st.setInt(1, empId);
+			rs = st.executeQuery();
+			while (rs.next()) {
+				
+				e.setId(rs.getInt(1));
+				e.setName(rs.getString(2));
+				e.setAge(rs.getInt(3));
+				e.setDateOfBirth(rs.getDate(4));
+				e.setDateOfJoining(rs.getDate(5));
+				e.setSalary(rs.getFloat(6));
+				e.setSalaryGrade(rs.getInt(7));
+				e.setDeptId(rs.getInt(8));
+				e.setDeptName(rs.getString(9));
+			}
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		return e;
+	}//
+
 
 	@Override
 	public List<Employee> getAll() {

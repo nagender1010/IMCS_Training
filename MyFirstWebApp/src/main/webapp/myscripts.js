@@ -1,4 +1,3 @@
-
 window.update = function() {
 	var firstName = document.getElementById('inp1').value;
 	var lastName = document.getElementById('inp2').value;
@@ -7,18 +6,20 @@ window.update = function() {
 }
 
 $("#D6").click(function() {
-	var inputStr = $("#inp1").val();
+	var inputStr = $("#d1").val();
 	if (inputStr.length < 8)
-		$("#error_msg1").html("First Name must be atleast 8 characters");
+		$("#error_msg0").html("User Name must be atleast 8 characters");
 	else {
-		$("#error_msg1").html("");
+		$("#error_msg0").html("");
 
 	}
 })
-$("#D6").click(function() {
+$("#D6")
+		.click(
+				function() {
 					var password1 = $("#pwd1").val();
 					var password2 = $("#pwd2").val();
-					var regularExpression = /^(?=.[0-9])(?=.[!@#$%^&])[A-Za-z]\w{10,50}$/;
+					var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,16}$/;
 
 					if (!regularExpression.test(password1)) {
 						$("#error_msg2")
@@ -36,6 +37,17 @@ $("#D6").click(function() {
 
 				})
 
+$("#D6").click(
+		function() {
+			var email = $("#d4").val();
+			var atposition = email.indexOf("@");
+			var dotposition = email.lastIndexOf(".");
+			if (atposition < 1 || dotposition < atposition + 2
+					|| dotposition + 2 >= email.length) {
+				$("#emailMsg").html("Enter correct email address");
+			}
+
+		})
 
 function myFunction() {
 	document.getElementById("myForm").reset();
