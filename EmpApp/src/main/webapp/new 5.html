@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+
+#header1{
+background-color: rgb(255,165,0);
+position: absolute;
+top:0px;
+left:0px;
+padding:10px;
+width:98.7%;
+
+}
+#id1{
+list-style-type:none;
+float:left;
+padding:10px;
+position:relative;
+left:250px;
+font-family: arial;
+}
+#id1 a{
+color:rgb(255,255,255);
+}
+ #id1 a:hover{
+color: rgb(0,100,0);
+}
+#header2{
+background-color: rgb(124,205,124);
+position:absolute;
+left:0px;
+top:60px;
+padding:5px;
+width:99.3%;
+}
+#nav-panel-1{
+background-color: rgb(255,255,255);
+padding:40px;
+width:94.7%;
+position:absolute;
+top:70px;
+left:0px;
+height:70px;
+}
+
+#id2{
+list-style-type:none;
+float:left;
+padding:10px;
+position:relative;
+left:270px;
+font-family: arial;
+font-size:13px;
+top:25px;
+}
+#id2 a{
+color:rgb(131,139,139);
+}
+#id2 a:hover{
+color: rgb(0,100,0);
+}
+.dropdown {
+
+   
+}
+#dropbtn1 a,#dropbtn2 a,#dropbtn3 a,#dropbtn4 a,#dropbtn5 a,#dropbtn6 a{
+padding:5px;
+color:rgb(96,123,139);
+font-size:10;
+width:220px;
+position:absolute;
+left:0px;
+text-decoration:none;
+border-bottom: 1px solid blue;
+border-style:solid;
+border-color:rgb(238,238,244);
+font-family:"Comic Sans MS", cursive, sans-serif;
+border-radius: 15px 50px;
+
+}
+
+#dropbtn1 a:hover,#dropbtn2 a:hover,#dropbtn3 a:hover,#dropbtn4 a:hover,#dropbtn5 a:hover,#dropbtn6 a:hover{
+
+color:rgb(255,255,255);
+background-color:rgb(96,123,139);
+width:220px;
+position:absolute;
+left:0px;
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+	left:0px;
+	top: 57px;
+    background-color: rgb(255,255,255);
+    width: 180px;
+	height:180px;
+    overflow: auto;
+	border-style:outset;
+	padding:35px;
+	border-color:rgb(96,123,139);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.nav-left{
+	position: absolute;
+	top :50px;
+	left :120px;
+	width:300px;
+	height:600px;
+    background-color: rgb(255,255,255);
+	border-style: solid;
+	border-color:rgb(238,238,244);
+}
+.nav-left a{
+text-decoration:none;
+color:black;
+border-style:solid;
+border-color:rgb(238,238,244);
+font-weight:important;
+padding:13px;
+position:absolute;
+left:10px;
+width:250px;
+font-family:"Comic Sans MS", cursive, sans-serif;
+border-radius: 15px 50px;
+}
+.nav-left a:hover{
+color:rgb(255,255,255);
+background-color:rgb(107,142,35);
+width:285px;
+position:absolute;
+left:10px;
+font-weight:important;
+ box-sizing: border-box;
+font-family:"Comic Sans MS", cursive, sans-serif;
+
+}
+#nav_rem{
+position:absolute;
+left:0px;
+top:220px;
+width:100%;
+height:1400px;
+background-color:rgb(255,255,255);
+background-image: url("http://previews.123rf.com/images/oly5/oly51304/oly5130400457/19466816-abstract-white-background-gray-color-vintage-grunge-background-texture-frosty-silver-background-luxu-Stock-Photo.jpg");
+}
+#nav2,#nav3,#nav4,#nav5,#nav6{
+display:none;
+}
+.form_1{
+position:absolute;
+left:450px;
+top:270px;
+width:65%;
+height:700px;
+}
+#form2,#form3,#form4{
+display:none;
+}
+.footer{
+position:absolute;
+left:0px;
+top:1622px;
+width:100%;
+height:600px;
+background-color:rgb(139,136,120);
+
+}
+#foo li{
+position:relative;
+left:320px;
+top:1700px;
+height:5px;
+padding:20px;
+font-family: arial;
+color:white;
+font-size:15px;
+float:left;
+list-style-type:none;
+text-decoration:underline;
+}
+#fo1 li a{
+position:relative;
+top:1750px;
+left:350px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+#fo2 li a{
+position:relative;
+top:1367px;
+left:470px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+#fo3 li a{
+position:relative;
+top:1267px;
+left:630px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+#fo4 li a{
+position:relative;
+top:1207px;
+left:780px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+#fo5 li a{
+position:relative;
+top:1067px;
+left:940px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+#fo6 li a{
+position:relative;
+top:927px;
+left:1050px;
+font-family: arial;
+color:white;
+font-size:9px;
+text-decoration:none;
+}
+
+</style>
+<body>
+<div id="head-id">
+<div id="header1">
+<li id="id1"><a href="http://www.toshiba.com/tai/" target="_blank">TOSHIBA</a></li>
+<li id="id1"><a href="http://www.nsta.org/" target="_blank">NSTA</a></li>
+<li id="id1"><a href="http://exploravision.nsta.org/Content/CoachVersion2016/Default.aspx" target="_blank">SIGN IN/REGISTER</a></li>
+</div>
+
+<div id="header2">
+</div>
+<div id="nav_rem">
+<div id="nav1" class="nav-left">
+	<a id="nav1_1"href="#" target="_self">PROJECT FORMAT</a><br><br><br>
+	<a id="nav1_2" href="#" target="_self">ABSTRACT</a><br><br><br>
+    <a id="nav1_3"href="#contact">DESCRIPTION</a><br><br><br>
+	<a id="nav1_4"href="#contact">BIBLIOGRAPHY</a><br><br><br>
+	<a id="nav1_5"href="#contact">SAMPLE WEB PAGES</a><br><br><br>
+    <a id="nav1_6"href="#">DEVELOPING A PROJECT</a><br><br><br>
+    <a id="nav1_7"href="#contact">RULES AND REQUIREMENTS</a><br><br><br>
+	<a id="nav1_8"href="#contact">DISQUALIFICATION</a><br><br><br>
+	<a id="nav1_9"href="#contact">PRIZES</a><br><br><br>
+	<a id="nav1_10"href="#contact">JUDGING</a>
+</div>	
+
+<div id="nav2" class="nav-left">
+    <a href="http://www.google.com/" target="_blank">HOW TO BRAINSTORM</a><br><br><br>
+    <a href="http://www.w3schools.com" target="_blank">CHOOSING A TOPIC</a><br><br><br>
+    <a href="#contact">HOW TO RESEARCH</a>
+</div>		
+
+<div id="nav3" class="nav-left">
+	<a href="http://www.google.com/" target="_blank">FOR TEACHERS</a><br><br><br>
+    <a href="http://www.w3schools.com" target="_blank">FOR PARENTS</a>
+</div>	
+	
+
+<div id="nav4" class="nav-left">
+	<a href="http://www.google.com/" target="_blank">NATIONAL WINNERS</a><br><br><br>
+   <a href="http://www.w3schools.com" target="_blank">REGIONAL WINNERS</a><br><br><br>
+   <a href="#contact">HONORABLE MENTIONS</a><br><br><br>
+   <a href="#contact">REGIONAL CONTACT</a>
+</div>	
+	
+
+<div id="nav5" class="nav-left">
+	<a href="http://www.w3schools.com" target="_blank">NEWS</a><br><br><br>
+   <a href="#contact">VIDEO GALLERY</a><br><br><br>
+   <a href="#contact">PHOTO GALLERY</a>
+</div>	
+	
+
+<div id="nav6" class="nav-left">
+	<a href="#">FAQ'S</a>
+</div>			
+</div>
+<form id="form1" class="form_1">
+<h1> PROJECT FORMAT </h1>
+<p>
+<b>Learn more about the parts of a project</b>
+Each project must include an abstract, description, bibliography, and five sample Web pages.<br> Required project components are as below. (Advice for lower grade teams: there is no minimum<br> word count and page number for each section. See project component sheet and sample projects<br> as a reference.<br><br>
+
+I. Abstract; An abstract of no more than 150 words that summarizes the proposed future technology and other relevant information must proceed other project components. The Abstract should be on a separate page and does not count as part of the Description components<br><br>
+
+II. Description; A project Description section does not exceed 11 pages and may be combination of text and art work. It must include the following section with heading clearly labeled and be in the following order:<br><br>
+<ol>
+<li>Present Technology*: An overview of the present form of the technology including scientific principles involved in its functioning. A problem definition or limitation of this present technology that you address in your ExploraVision project.</li><br><br>
+<li>History: Research and description of the history of the technology from its inception.</li><br><br>
+<li>Future Technology: Description of the team's vision for what this technology would be like in 20 years, including scientific principles involved in developing the technology.</li><br><br>
+<li>Breakthroughs*: Research and description of breakthroughs that are necessary to make the future technology design a reality. Description of why this future technology doesn't exist today. (Choose one of your required breakthroughs and describe an investigation that would have to be planned and carried out to test your ExploraVision project. If possible, include the kind of data or measurements that would be collected in the investigation.)<br><br>
+<li>Design Process*: Description of three alternative ideas of features the team considered for their project. The ideas and features should be directly related to the project. Describe why the team rejected each feature and idea in favor of the ones in the submitted technology. Describe how your future technology feature is better than the rejected design feature.</li><br><br>
+<li>Consequences*: Description of recognition that all technologies have positive and negative consequences including the potential positive and negative consequences of the new technology on society.</li><br><br>
+</ol>
+III. Bibliography; A list of all sources and references used in researching the chosen technology. Sources must be clearly labeled and include title, author, publisher, and copyright date. Footnotes are encouraged, but not required. The Bibliography is not counted as part of the 11-page limit for the Description section.</li><br><br>
+
+IV. Sample Web Pages*; Team members must draw five sample web pages that communicate and promote their future technology vision. Web pages may be hand-drawn or computer-generated (e.g., powerpoint) and may include text, pictures, photographs and diagrams. They should relate to material presented in the written description and illustrate the attributes of the chose technology. One web page should be devoted to a model or visual representation of the technology that could be used to create a prototype for display. The model should help others visualize the design and communicate design features. Include a description of limitation s of the model. No need to create an actual website or a prototype untill a team become a Regional winner.</li><br><br>
+
+* Section central to the Next Generation Science Standards.<br><br>
+
+Click here to see some real examples of winning projects.
+</p>
+</form>
+
+<form id="form2" class="form_1">
+Summarize your proposed future technology and other relevant information. Abstract document<br> must precede other project components and should be on a separate page from Description. It<br> does not count as part of the Description.
+
+<br><br>Mandatory criteria: No more than 150 words (typed and clearly labeled).<br>
+
+If you're submitting via online, please submit a typed and clearly labeled digital document.<br>
+
+If you're submitting a paper project, please make sure this document is typed, double-spaced and clearly labeled.
+</p>
+</form>
+<div class="footer">
+</div>
+
+<div id="foo">
+
+<li>COMPETITION</li>	
+<li>STUDENTS</li>
+<li>TEACHEARS AND PARENTS</li>
+<li>MEDIA</li>
+<li>WINNERS</li>
+<li>ABOUT</li>
+</div>
+<br><br><br>
+<div id="fo1">
+
+	<li><a href="#">PROJECT FORMAT</a><br><br></li>
+	<li><a href="#">ABSTRACT</a><br><br></li>
+	<li><a href="#contact">DESCRIPTION</a><br><br></li>
+	<li><a href="#contact">BIBLIOGRAPHY</a><br><br></li>
+	<li><a href="#contact">SAMPLE WEB PAGES</a><br><br></li>
+    <li><a href="#">DEVELOPING A PROJECT</a><br><br></li>
+    <li><a href="#contact">RULES AND REQUIREMENTS</a><br><br></li>
+	<li><a href="#contact">DISQUALIFICATION</a><br><br></li>
+	<li><a href="#contact">PRIZES</a><br><br></li>
+	<li><a href="#contact">JUDGING</a></li>
+	</div>
+	
+	<div id="fo2">
+
+	<li><a href="#">HOW TO BRAINSTORM</a><br><br></li>
+    <li><<a href="#">CHOOSING A TOPIC</a><br><br></li>
+    <li><<a href="#contact">HOW TO RESEARCH</a></li>
+	</div>
+	<div id="fo3">
+
+	<li><a href="#">FOR TEACHERS</a><br><br></li>
+    <li><a href="#">FOR PARENTS</a></li>
+  
+	</div>
+	<div id="fo4">
+
+	<li><a href="#">NATIONAL WINNERS</a><br><br></li>
+    <li><a href="#">REGIONAL WINNERS</a><br><br></li>
+    <li><a href="#contact">HONORABLE MENTIONS</a><br><br></li>
+	<li><a href="#contact">REGIONAL CONTACT</a></li>
+	</div>
+	<div id="fo5">
+
+	<li><a href="#">MEDIA ROOM</a><br><br></li>
+    <li><a href="#">NEWS</a><br><br></li>
+    <li><a href="#contact">VIDEO GALLERY</a><br><br></li>
+	<li><a href="#contact">PHOTO GALLERY</a></li>
+	</div>
+	
+	<div id="fo6">
+
+	<li><a href="#">FAQ'S</a><br><br></li>
+ 
+	</div>
+</div>
+<div id="nav-panel-1">
+<li id="id2">
+<a id="com" href="#" target="_self">COMPETITION</a>
+<a href="#"><i id="i1" class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn1" class="dropdown-content">
+    <a href="#">PROJECT FORMAT</a><br><br>
+    <a href="#">DEVELOPING A PROJECT</a><br><br>
+    <a href="#contact">RULES AND REQUIREMENTS</a><br><br>
+	<a href="#contact">AVOIDING DISQUALIFICATION</a><br><br>
+	<a href="#contact">PRIZES</a><br><br>
+	<a href="#contact">JUDGING</a>
+  </div>
+</li>
+<li id="id2"><a id="stu" href="#">STUDENTS</a>
+<a href="#"><i id="i2" class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn2" class="dropdown-content">
+    <a href="http://www.google.com/" target="_blank">HOW TO BRAINSTORM</a><br><br>
+    <a href="http://www.w3schools.com" target="_blank">CHOOSING A TOPIC</a><br><br>
+    <a href="#contact">HOW TO RESEARCH</a>
+  </div>
+</li>
+<li id="id2"><a id="tp" href="#">TEACHERS AND PARENTS</a>
+<a href="#"><i id="i3"class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn3" class="dropdown-content">
+<a href="http://www.google.com/" target="_blank">FOR TEACHERS</a><br><br>
+    <a href="http://www.w3schools.com" target="_blank">FOR PARENTS</a>
+</li>
+<li id="id2"><a id="win" href="#">WINNERS</a>
+<a href="#"><i id="i4"class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn4" class="dropdown-content">
+   <a href="http://www.google.com/" target="_blank">NATIONAL WINNERS</a><br><br>
+   <a href="http://www.w3schools.com" target="_blank">REGIONAL WINNERS</a><br><br>
+   <a href="#contact">HONORABLE MENTIONS</a><br><br>
+   <a href="#contact">REGIONAL CONTACT</a>
+</li>
+<li id="id2">
+<a id="mr" href="#">MEDIA ROOM</a>
+<a href="#"><i id="i5" class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn5" class="dropdown-content">
+  <a href="http://www.w3schools.com" target="_blank">NEWS</a><br><br>
+   <a href="#contact">VIDEO GALLERY</a><br><br>
+   <a href="#contact">PHOTO GALLERY</a>
+</li>
+<li id="id2"><a id="abt" href="#">ABOUT</a>
+<a href="#"><i id="i6" class="fa fa-bars" style="padding:10px"></i></a>
+<div id="dropbtn6" class="dropdown-content">
+<a href="#contact">FAQ'S</a>
+</li>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("#i1").click(function(){
+        $("#dropbtn1").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#i2").click(function(){
+        $("#dropbtn2").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#i3").click(function(){
+        $("#dropbtn3").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#i4").click(function(){
+        $("#dropbtn4").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#i5").click(function(){
+        $("#dropbtn5").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#i6").click(function(){
+        $("#dropbtn6").toggle();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i2,#i3,#i4,#i5,#i6").click(function(){
+        $("#dropbtn1").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i1,#i3,#i4,#i5,#i6").click(function(){
+        $("#dropbtn2").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i1,#i2,#i4,#i5,#i6").click(function(){
+        $("#dropbtn3").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i1,#i2,#i3,#i5,#i6").click(function(){
+        $("#dropbtn4").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i2,#i3,#i4,#i1,#i6").click(function(){
+        $("#dropbtn5").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#head-id,#i2,#i3,#i4,#i5,#i1").click(function(){
+        $("#dropbtn6").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#com").click(function(){
+   $("#nav1").show();
+   $("#nav2,#nav3,#nav4,#nav5,#nav6").hide();
+	
+    });
+});
+$(document).ready(function(){
+   $("#stu").click(function(){
+   $("#nav2").show(); 
+   $("#nav1,#nav3,#nav4,#nav5,#nav6").hide();
+  
+	 
+    });
+});
+$(document).ready(function(){
+   $("#tp").click(function(){
+   $("#nav3").show(); 
+    $("#nav1,#nav2,#nav4,#nav5,#nav6").hide();
+ 
+    });
+});
+$(document).ready(function(){
+   $("#win").click(function(){
+   $("#nav4").show(); 
+    $("#nav1,#nav3,#nav2,#nav5,#nav6").hide();
+  
+	 
+    });
+});
+$(document).ready(function(){
+   $("#mr").click(function(){
+   $("#nav5").show();
+    $("#nav1,#nav3,#nav4,#nav2,#nav6").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#abt").click(function(){
+   $("#nav6").show(); 
+   $("#nav1,#nav3,#nav4,#nav5,#nav2").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#nav1_1").click(function(){
+   $("#form1").show(); 
+   $("#form2,#form3,#form4").hide();
+	 
+    });
+});
+$(document).ready(function(){
+   $("#nav1_2").click(function(){
+   $("#form2").show(); 
+   $("#form1,#form3,#form4").hide();
+	 
+    });
+});
+
+</script>
+
+
+</body>
+</html>

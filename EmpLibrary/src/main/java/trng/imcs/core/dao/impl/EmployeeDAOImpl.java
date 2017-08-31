@@ -72,6 +72,56 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 
 	}
+	
+	public void addEmployee(Employee e) {
+
+		final String sql = "insert into employee (id, name, age, dateOfBirth, dateOfJoining, salary, salaryGrade, deptId, deptName) values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		try (Connection con = ConnectionManager.getConnection();
+				PreparedStatement preparedStatement = con.prepareStatement(sql)) {
+			
+			int id = generateId();
+			boolean hasLeftOverBatchRecords = true;
+
+				preparedStatement.setInt(1, id);
+				preparedStatement.setString(2, e.getName());
+				preparedStatement.setInt(3, e.getAge());
+				java.util.Date d = e.getDateOfBirth();
+				java.sql.Date dob = new java.sql.Date(d.getYear(), d.getMonth(), d.getDate());
+				preparedStatement.setDate(4, dob);
+				java.util.Date d1 = e.getDateOfJoining();
+				java.sql.Date doj = new java.sql.Date(d1.getYear(), d1.getMonth(), d1.getDate());
+				preparedStatement.setDate(5, doj);
+				preparedStatement.setFloat(6, e.getSalary());
+				preparedStatement.setInt(7, e.getSalaryGrade());
+				preparedStatement.setInt(8, e.getDeptId());
+				preparedStatement.setString(9, e.getDeptName());
+				int status = preparedStatement.executeUpdate();
+				if (status != 1) {
+					con.rollback();
+				}
+
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+
+	}
+
+	private int generateId() {
+		final String sql = "SELECT MAX(id) FROM employee";
+		ResultSet rs = null;
+		int id=0;
+		try (Connection con = ConnectionManager.getConnection();
+				PreparedStatement st = con.prepareStatement(sql)) {
+			rs = st.executeQuery(sql);
+			while (rs.next()) {
+					id = rs.getInt(1);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return id+1;
+	}
 
 	@Override
 	public List<Employee> getAll(int deptId, String orderBy) {
@@ -281,5 +331,55 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 
 		return true;
+	}
+	
+	public boolean updateEmployee(Employee e) {
+		final String sql = "update employee set name=?, age=?, dateOfBirth=?, dateOfJoining=?, salary=?, salaryGrade=?, deptId=?, deptName=? where id =?";
+		try (Connection con = ConnectionManager.getConnection(); PreparedStatement st = con.prepareStatement(sql)) {
+			st.setString(1, e.getName());
+			st.setInt(2, e.getAge());
+			java.util.Date d = e.getDateOfBirth();
+			java.sql.Date dob = new java.sql.Date(d.getYear(), d.getMonth(), d.getDate());
+			st.setDate(3, dob);
+			java.util.Date d1 = e.getDateOfJoining();
+			java.sql.Date doj = new java.sql.Date(d1.getYear(), d1.getMonth(), d1.getDate());
+			st.setDate(4, doj);
+			st.setFloat(5, e.getSalary());
+			st.setInt(6, e.getSalaryGrade());
+			st.setInt(7, e.getDeptId());
+			st.setString(8, e.getDeptName());
+			st.setInt(9, e.getId());
+
+			final int status = st.executeUpdate();
+			con.close();
+			if (status != 1) {
+				con.rollback();
+				return false;
+			}
+
+		} catch (SQLException ex) {
+			// TODO Auto-generated catch block
+			ex.printStackTrace();
+		}
+
+		return true;
+	}
+	
+	public boolean deleteEmployee(int empId) {
+		final String sql = "delete from employee where id = ?";
+		try (Connection con = ConnectionManager.getConnection(); PreparedStatement st = con.prepareStatement(sql)) {
+			
+			st.setInt(1, empId);
+
+			final int status = st.executeUpdate();
+			if (status>0) {
+				return true;
+			}
+
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+
+		return false;
 	}
 }

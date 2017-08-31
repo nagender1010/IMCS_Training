@@ -20,7 +20,7 @@ import trng.imcs.core.dao.impl.EmployeeDAOImpl;
 
 public class EmployeeServiceImpl implements EmployeeService {
 	final Logger logger = Logger.getLogger(EmployeeServiceImpl.class);
-	EmployeeDAOImpl dao = new EmployeeDAOImpl();
+	EmployeeDAO dao = new EmployeeDAOImpl();
 
 	public List<Employee> loadFromFile() {
 		logger.info("Loading file from source");
@@ -55,6 +55,35 @@ public class EmployeeServiceImpl implements EmployeeService {
 		}
 		return dao.getAll(deptNo, "dateOfJoining");
 		
+	}
+
+	@Override
+	public void addEmployee(Employee e) throws SQLException {
+		dao.addEmployee(e);
+	}
+
+	@Override
+	public Employee getEmployee(int empId) throws SQLException {
+		return dao.getEmployee(empId);
+	}
+
+	@Override
+	public boolean updateEmployee(Employee e) throws SQLException {
+		if(dao.updateEmployee(e)) {
+			return true;
+		}
+		
+		return false;
+	}
+
+	@Override
+	public List<Employee> getAll(int deptId) throws SQLException {
+		return dao.getAll(deptId);
+	}
+
+	@Override
+	public boolean deleteEmployee(int empId) throws SQLException {
+		return dao.deleteEmployee(empId);		
 	}
 	
 	

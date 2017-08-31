@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+        .navbar-inverse{
+          background-color:  darkcyan;
+      }
+      .navbar-name,.navbar-name:hover{
+          color: white;
+          font-size:25px;
+          font-family: serif;
+          position: absolute;
+          left: 200px;
+          top:13px;
+          text-decoration: none;
+      }
+    
+      .dropdown-toggle{
+          position: absolute;
+          left: 800px;
+      }
+      .dropdown-menu{
+          position: absolute;
+          left: 800px;
+          background-color: aliceblue;
+      }
+      .container{
+          background-color:aliceblue;
+      }
+     
+      #id1{
+          width:250px;
+          height:180px;
+          display:none;
+          position: absolute;
+          left:1000px;
+          top:50px;
+      }
+      #i1,#i2,#i3{
+          width:200px;
+      }
+      #i3{
+          background-color: darkcyan;
+          font-family: serif;
+          color:white;
+      }
+      
+     
+      #log{
+          background-color: darkcyan;
+           position: absolute;
+          left: 1000px;
+          top:11px;
+      }
+    
+    
+      h2{
+          color:darkcyan;
+      }
+      label{
+          color: black;
+      }
+      .container{
+          width: 30%;
+          position:absolute;
+          left:450px;
+      }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-name" href="#">S  P  L  I  T  W  I  S  E</a>
+    </div>
+     <ul class="nav navbar-nav">
+         
+      
+       <button id="log" type="button" class="btn btn-info">Log in</button>
+        
+          <div id="id1" class="container">
+              <form action="action.page_php"><br>
+              <input id="i1" type="email" placeholder="Email Address" required><br><br>
+              <input id="i2" type="password" placeholder="Password" required><br><br>
+              <input id="i3" type="submit" value="Log in to splitwise">
+              </form>
+            </div>
+
+        
+    </ul>
+  </div>
+</nav>
+    
+<div class="container">
+  <h2>Sign Me Up</h2>
+  <form action="${pageContext.request.contextPath}/customer/register" onsubmit="return myFunction()" method="post">
+    <div class="form-group">
+      <label  for="text">First Name:</label>
+      <input type="text" class="form-control" id="fn" placeholder="Enter first name" required>
+    </div>
+      <div class="form-group">
+      <label  for="text">Last Name:</label>
+      <input type="text" class="form-control" id="ln" placeholder="Enter last name" required>
+    </div>
+      <div class="form-group">
+      <label  for="number">Mobile number:</label>
+      <input type="number" class="form-control" id="numb" placeholder="Enter Mobile number" required>
+    </div>
+      <div class="form-group">
+      <label   for="email">Email Id:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <label  for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+    </div>
+      <div class="form-group">
+      <label  for="pwd1">Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd1" placeholder="Enter password" required>
+    </div>
+    <button id="btn" type="submit" class="btn btn-default" style="background-color:aliceblue">Submit</button>
+  </form>
+</div>
+    </body>
+    <script>
+   function myFunction(){
+    if (document.getElementById('pwd').value===document.getElementById('pwd1').value){
+        
+ return true;
+}
+else {
+    alert("Passwords do not match");
+ return false;
+}
+    }
+        
+$(document).ready(function(){
+    $("#log").click(function(){
+        $("#id1").toggle();
+    })
+})
+       
+    </script>
+    
+  

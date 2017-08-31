@@ -27,6 +27,23 @@ public class Employee {
 		this.deptId = deptId;
 		this.deptName = deptName;
 	}
+	
+	
+
+	public Employee(String name, int age, Date dateOfJoining, Date dateOfBirth, float salary, int salaryGrade,
+			int deptId, String deptName) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.dateOfJoining = dateOfJoining;
+		this.dateOfBirth = dateOfBirth;
+		this.salary = salary;
+		this.salaryGrade = salaryGrade;
+		this.deptId = deptId;
+		this.deptName = deptName;
+	}
+
+
 
 	@Override
 	public String toString() {

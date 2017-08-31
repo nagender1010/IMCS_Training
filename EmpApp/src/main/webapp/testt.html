@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+   /*  footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a id="a1" href="#">Employee Details</a></p>
+      <p><a id="a2" href="#">Department Details</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+    <br>
+      <a id="p1" style ="display:none">
+      <input id="D1" type="submit" class="btn btn-info" value="ADD">
+      <input id="D2" type="submit" class="btn btn-info" value="UPDATE">
+      <input id="D3" type="submit" class="btn btn-info" value="DELETE">
+      <input id="D4" type="submit" class="btn btn-info" value="SEARCH">
+      </a>
+      <a id="p2" style ="display:none">
+      <tr>
+					<th>Department ID</th>
+					<td><input class="requiredAttr" name="empId" id="empId"
+						placeholder="Enter Dpt ID" type="number" required><span id="error_msg0"
+						style="color: red"></span></td>
+					<td><input type="submit" class="btn btn-info"
+						value="Submit"></td>
+    		</tr>
+      </a>
+    
+    	<form id="p3" style ="display:none">
+    		<div class="container">
+
+			<table class="table table-hover">
+
+			<br>
+				<tr>
+					<th>Name<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="d1" type="text" required><span
+						id="error_msg0" style="color: red"></span></td>
+				</tr>
+
+				<tr>
+					<th>Age<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="pwd1" type="password"
+						value="" required><span id="error_msg2" style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>DOB<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<!-- <td><input type="date" data-date="" data-date-format="DD MMMM YYYY" ></td> -->
+					<td><input class="requiredAttr" id="pwd2" type="date"
+						value="" required></td>
+				</tr>
+				
+				<tr>
+					<th>DOJ<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp1" type="date"
+						onchange="update()" required><span id="error_msg1"
+						style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>Dept ID<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp2" type="text"
+						onchange="update()" required></td>
+				</tr>
+				<tr>
+					<th>Salary<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp1" type="text"
+						onchange="update()" required><span id="error_msg1"
+						style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>Salary Grade<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp2" type="text"
+						onchange="update()" required></td>
+				</tr>
+				<tr>
+					<th>Dept Name<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="d4" type="email" value=""
+						required><span id="emailMsg" style="color: red"></span></td>
+				</tr>
+				
+				<tr>
+					
+					<td><input id="D6" type="button" class="btn btn-info" value="Add User"
+			onclick="Register()"></td>
+				</tr>
+				
+			</table>
+		</div>
+    		
+    	</form>
+    	<form id="p4" style ="display:none">
+    	<br>
+    		<tr>
+					<th>Employee ID</th>
+					<td><input class="requiredAttr" name="empId" id="empId"
+						placeholder="Enter Emp ID to Update Record" type="number" ><span id="error_msg0"
+						style="color: red"></span></td>
+					<td><input id="DS" type="submit" class="btn btn-info"
+						value="Submit"></td>
+    		</tr>
+    	</form>
+    	
+    	<form id="p41" style ="display:none">
+    			<div class="container">
+
+			<table class="table table-hover">
+
+
+				<tr>
+					<th>Name<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="d1" type="text" required><span
+						id="error_msg0" style="color: red"></span></td>
+				</tr>
+
+				<tr>
+					<th>Age<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="pwd1" type="password"
+						value="" required><span id="error_msg2" style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>DOB<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="pwd2" type="password"
+						value="" required></td>
+				</tr>
+				<tr>
+					<th>Salary<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp1" type="text"
+						onchange="update()" required><span id="error_msg1"
+						style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>Salary Grade<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp2" type="text"
+						onchange="update()" required></td>
+				</tr>
+				<tr>
+					<th>DOJ<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp1" type="text"
+						onchange="update()" required><span id="error_msg1"
+						style="color: red"></span></td>
+				</tr>
+				<tr>
+					<th>Dept ID<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="inp2" type="text"
+						onchange="update()" required></td>
+				</tr>
+				<tr>
+					<th>Dept Name<span><i class="fa fa-asterisk"
+							aria-hidden="true" style="color: red"></i></span></th>
+					<td><input class="requiredAttr" id="d4" type="email" value=""
+						required><span id="emailMsg" style="color: red"></span></td>
+				</tr>
+				
+				<tr>
+					
+					<td><input id="D6" type="button" class="btn btn-info" value="Add User"
+			onclick="Register()"></td>
+				</tr>
+				
+			</table>
+		</div>
+    		
+    		</form>
+    		
+    	<form id="p5" style ="display:none">
+    		<br>
+    		<tr>
+					<th>Employee ID</th>
+					<td><input class="requiredAttr" name="empId" id="empId"
+						placeholder="Enter Emp ID to Delete" type="number" required><span id="error_msg0"
+						style="color: red"></span></td>
+					<td><input type="submit" class="btn btn-info"
+						value="Submit"></td>
+    		</tr>
+    	</form>
+    	<form id="p6" style ="display:none">
+    		<br>
+    		<tr>
+					<th>Employee ID</th>
+					<td><input class="requiredAttr" name="empId" id="empId"
+						placeholder="Enter Emp ID to get Info" type="number" required><span id="error_msg0"
+						style="color: red"></span></td>
+					<td><input type="submit" class="btn btn-info"
+						value="Submit"></td>
+    		</tr>
+    	</form>
+    	
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script>
+$(document).ready(function(){
+	   $("#a1").click(function(){
+	   $("#p1").show();
+	   $("#p2").hide(); 
+	   $("#p3").hide();
+	   $("#p4").hide();
+	   $("#p5").hide();
+	   $("#p6").hide();
+	 
+	    });
+	});
+	
+$(document).ready(function(){
+	   $("#a2").click(function(){
+	   $("#p2").show();
+	   $("#p1").hide();
+	   $("#p3").hide();
+	   $("#p4").hide();
+	   $("#p5").hide();
+	   $("#p6").hide();
+		 
+	    });
+	});
+	
+$(document).ready(function(){
+	   $("#D1").click(function(){
+		$("#p1").show();
+	   $("#p3").show();
+	   $("#p2").hide();
+	   $("#p4").hide();
+	   $("#p5").hide();
+	   $("#p6").hide();
+	   $("#p41").hide();
+	 
+	    });
+	});
+	
+$(document).ready(function(){
+	   $("#D2").click(function(){
+		   $("#p1").show();
+		   $("#p4").show();
+	   $("#p2").hide();
+	   $("#p3").hide();
+	   $("#p5").hide();
+	   $("#p6").hide();
+	   $("#p41").hide();
+	   
+	    });
+	});
+$(document).ready(function(){
+	   $("#D3").click(function(){
+	   $("#p5").show();
+	   $("#p1").show();
+	   $("#p2").hide();
+	   $("#p3").hide();
+	   $("#p4").hide();
+	   $("#p6").hide();
+	
+	    });
+	});
+$(document).ready(function(){
+	   $("#D4").click(function(){
+	   $("#p6").show();
+	   $("#p1").show();
+	   $("#p2").hide();
+	   $("#p3").hide();
+	   $("#p4").hide();
+	   $("#p5").hide();
+	 
+	    });
+	});
+	
+$(document).ready(function(){
+	   $("#DS").click(function(){
+	   $("#p41").show();
+	   $("#p6").hide();
+	   $("#p1").show();
+	   $("#p2").hide();
+	   $("#p3").hide();
+	   $("#p4").hide();
+	   $("#p5").hide();
+	 
+	    });
+	});
+</script>
+</html>
