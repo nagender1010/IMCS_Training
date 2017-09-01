@@ -13,10 +13,13 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import imcs.core.model.Credentials;
+import imcs.core.model.Department;
 import imcs.core.model.Employee;
 import imcs.core.service.EmployeeService;
 import trng.imcs.core.dao.EmployeeDAO;
 import trng.imcs.core.dao.impl.EmployeeDAOImpl;
+import trng.imcs.util.EmpUtil;
 
 public class EmployeeServiceImpl implements EmployeeService {
 	final Logger logger = Logger.getLogger(EmployeeServiceImpl.class);
@@ -50,11 +53,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	public List<Employee> getAllEmployeeDetails(int deptNo) throws SQLException {
-		if(deptNo%2==0) {
+		if (deptNo % 2 == 0) {
 			return dao.getAll(deptNo, "dateOfBirth");
 		}
 		return dao.getAll(deptNo, "dateOfJoining");
-		
+
 	}
 
 	@Override
@@ -69,10 +72,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public boolean updateEmployee(Employee e) throws SQLException {
-		if(dao.updateEmployee(e)) {
+		if (dao.updateEmployee(e)) {
 			return true;
 		}
-		
+
 		return false;
 	}
 
@@ -83,9 +86,30 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public boolean deleteEmployee(int empId) throws SQLException {
-		return dao.deleteEmployee(empId);		
+		return dao.deleteEmployee(empId);
 	}
-	
-	
+
+	@Override
+	public Department getDepartment(int deptId) {
+		Department department1 = null;
+		List<Department> deptList = EmpUtil.getDepartmentList();
+		for (Department department : deptList) {
+			if (department.getId() == deptId) {
+				return department;
+			}
+		}
+
+		return department1;
+	}
+
+	@Override
+	public boolean validateUser(String username, String password) {
+		
+		Credentials cred = new Credentials(username, password);
+		if (new EmpUtil().getCredentials().contains(cred)) {
+			return true;
+		}
+		return false;
+	}
 
 }

@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.List;
 
+import imcs.core.model.Department;
 import imcs.core.model.Employee;
 
 public interface EmployeeService {
@@ -17,5 +18,7 @@ public interface EmployeeService {
 	public boolean updateEmployee(Employee e) throws SQLException;
 	public List<Employee> getAll(int deptId) throws SQLException;
 	public boolean deleteEmployee(int empId)  throws SQLException;
+	public Department getDepartment(int deptId);
+	public boolean validateUser(String username, String password);
 
 }
