@@ -73,13 +73,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	}
 	
-	public void addEmployee(Employee e) {
-
+	public int addEmployee(Employee e) {
+		int id=0;
 		final String sql = "insert into employee (id, name, age, dateOfBirth, dateOfJoining, salary, salaryGrade, deptId, deptName) values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		try (Connection con = ConnectionManager.getConnection();
 				PreparedStatement preparedStatement = con.prepareStatement(sql)) {
 			
-			int id = generateId();
+			id = generateId();
 			boolean hasLeftOverBatchRecords = true;
 
 				preparedStatement.setInt(1, id);
@@ -103,6 +103,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		} catch (SQLException e1) {
 			e1.printStackTrace();
 		}
+		return id;
 
 	}
 

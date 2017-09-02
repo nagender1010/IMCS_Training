@@ -13,7 +13,7 @@ public interface EmployeeDAO {
 
 	public void add(List<Employee> empList) throws SQLException;
 	
-	public void addEmployee(Employee e) throws SQLException;
+	public int addEmployee(Employee e) throws SQLException;
 	
 	List<Employee> getAll(int deptId, String orderBy) throws SQLException;
 

@@ -61,8 +61,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	@Override
-	public void addEmployee(Employee e) throws SQLException {
-		dao.addEmployee(e);
+	public int addEmployee(Employee e) throws SQLException {
+		return dao.addEmployee(e);
 	}
 
 	@Override
@@ -104,7 +104,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public boolean validateUser(String username, String password) {
-		
 		Credentials cred = new Credentials(username, password);
 		if (new EmpUtil().getCredentials().contains(cred)) {
 			return true;

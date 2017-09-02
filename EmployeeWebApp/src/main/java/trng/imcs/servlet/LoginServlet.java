@@ -29,7 +29,8 @@ public class LoginServlet extends HttpServlet {
 		EmployeeService es = new EmployeeServiceImpl();
 		boolean status = es.validateUser(username, password);
 		if(status==true) {
-			url = "/success.jsp";
+			url = "/empHome.jsp";
+			request.getSession().setAttribute("username", username);
 			rDispatcher = request.getRequestDispatcher(url);
 			rDispatcher.forward(request, response);
 		}
@@ -41,6 +42,12 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		RequestDispatcher rDispatcher;
+		request.getSession().invalidate();
+		String url = "/welcome.jsp";
+		rDispatcher = request.getRequestDispatcher(url);
+		rDispatcher.forward(request, response);
+		
 	}
 
 }
